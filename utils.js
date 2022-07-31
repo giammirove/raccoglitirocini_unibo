@@ -10,8 +10,8 @@ export function readInput(txt, pwd) {
     if (pwd) rl.stdoutMuted = true;
 
     rl.question(`[?] ${txt}`, function (input) {
-      resolve(input);
       rl.close();
+      resolve(input);
     });
 
     rl._writeToOutput = function _writeToOutput(stringToWrite) {

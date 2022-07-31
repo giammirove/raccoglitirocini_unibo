@@ -161,7 +161,8 @@ export async function login(user, pass) {
     setCookieToFile(SESSION_COOKIE);
     return SESSION_COOKIE;
   } catch (e) {
-    printError(e);
-    login();
+    printError("Qualcosa e' andato storto, riprovare");
+    // printError(e);
+    // login();
   }
 }
