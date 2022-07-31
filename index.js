@@ -226,7 +226,7 @@ function saveMarkDown(md) {
 async function main() {
   try {
     cookie = await login();
-    // let meta = await getListOfMeta();
+    let meta = await getListOfMeta();
     // looks like that if u dont execute `getListOfMeta` before `getSearchResult`
     // you'll got a strange from backend :(
     // ( just if you run getSearchResult with parameters ... )
